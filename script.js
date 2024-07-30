@@ -10,7 +10,6 @@ function addNewTask() {
     const li = document.createElement('li');
     li.classList.add('taskItem');
 
-    // Checkbox oluştur
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.classList.add('taskCheckbox');

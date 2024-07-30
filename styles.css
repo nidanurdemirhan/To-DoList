@@ -63,7 +63,6 @@ li {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    height: 20px;
 }
 
 li .deleteButton {
@@ -77,6 +76,12 @@ li .deleteButton {
 
 li .deleteButton:hover {
     background-color: #708edb;
+}
+
+.taskText{
+    display: flex;
+    text-align: left;
+    width:260px;
 }
 
 
