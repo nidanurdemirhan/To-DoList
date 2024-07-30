@@ -1,6 +1,6 @@
 function addNewTask() {
 
-    const taskInput = document.getElementById('taskInput').value.trim();
+    const taskInput = document.getElementById('taskDetail').value.trim();
 
     if (taskInput === "") {
         alert("Please enter a task.");
@@ -42,12 +42,12 @@ function addNewTask() {
     const taskList = document.getElementById('taskList');
     taskList.appendChild(li);
 
-    document.getElementById('taskInput').value = "";
+    document.getElementById('taskDetail').value = "";
 }
 
 document.getElementById('addTaskButton').addEventListener('click', addNewTask);
 
-document.getElementById('taskInput').addEventListener('keypress', function(event) {
+document.getElementById('taskDetail').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         addNewTask();
     }
